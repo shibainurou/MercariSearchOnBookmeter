@@ -1,0 +1,2 @@
+# MercariSearchOnBookmeter
+読書メーターの欲しい本リストページにメルカリへのリンクを追加するFirefox add-on
