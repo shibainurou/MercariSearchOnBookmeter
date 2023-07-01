@@ -1,0 +1,30 @@
+{
+  "manifest_version": 2,
+  "name": "mercari_search",
+  "version": "1.0",
+  "description": "読書メーターで表示している本をメルカリで検索する",
+  "icons": {
+    "48": "icons/mercari_search.png"
+  },
+  "permissions": [
+    "tabs",
+    "activeTab",
+    "https://bookmeter.com/users/*/books/wish*"
+  ],
+  "background": {
+    "scripts": [
+      "background.js"
+    ]
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://bookmeter.com/users/*/books/wish*",
+        "https://bookmeter.com/books/*"
+      ],
+      "js": [
+        "mercari_search.js"
+      ]
+    }
+  ]
+}
